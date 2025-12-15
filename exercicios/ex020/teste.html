@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div {
+            background-color: cadetblue;
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.599);
+        }
+
+        div:hover {
+            background-color: cornflowerblue;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            background-color: cadetblue;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: cornflowerblue;
+            text-decoration: underline;
+        }
+
+        a::after {
+            content: ' [link]';
+            color: antiquewhite;
+            font-weight: lighter;
+        }
+
+        a:active {
+            background-color: bisque;
+        }
+
+        a:visited {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Teste</h1>
+    <p>Olha o que aprendi</p>
+    <div id="c">
+        Qualquer coisa
+        <p>textto escondido</p>
+    </div>
+    <div id="b">
+        Outra coisa
+        <p>texto escondido</p>
+    </div>
+    <div id="a">
+        Mais uma coisa
+        <p>testo escondido</p>
+    </div>
+
+    <h1>Links</h1>
+
+    <ul>
+        <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" class="importante">W3School</a></li>
+    </ul>
+</body>
+
+</html>
