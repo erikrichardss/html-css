@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+
+            /* Todo html já tem o position: relative; por padrão */
+        }
+
+        #conteudo {
+            background: url('imagens/target001.png') center/cover;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            /* Ao colocar o conteudo com position: absolute; visualmente não muda nada, más te permite fazer outras alterações como left, auto. */
+            left: 50%;
+            top: 50%;
+
+            /* transform: translate(-50%, -50%); simplesmente meche para direita ou para cima, podendo fazer o oposto simplesmente colocando o valor como negativo */
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+
+</html>
