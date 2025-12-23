@@ -1,0 +1,87 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --cor1: black;
+    --cor2: white;
+
+    --fontDestaque: 'Passion One';
+    --fontPadrão: 'Sriracha';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--cor1);
+    width: 100%;
+    padding: 50px 0px 20px 0px;
+    text-align: center;
+}
+
+header > h1 {
+    font: bolder 4em var(--fontDestaque);
+    font-variant: small-caps;
+    font-size: 10vw;
+    padding-top: 30px;
+    color: var(--cor2);
+}
+
+nav > a {
+    font: normal 20px var(--fontDestaque);
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+section {
+    font-family: var(--fontPadrão);
+    padding: 60px 0px 60px 40px;
+    font-size: 3vw;
+}
+
+p {
+    font-size: 1em;
+}
+
+section#containerOne {
+    background: var(--cor1) url('imagens/background001.jpg') right center/cover no-repeat fixed;
+    box-shadow: inset 0px 17px 20px 1px #000000ad;
+}
+
+aside#conteudo > p {
+    background-color: rgba(0, 0, 0, 0.444);
+    line-height: 2em;
+    color: var(--cor2);
+    padding: 10px;
+    display: inline-block;
+}
+
+section#containerTwo {
+    background: var(--cor1) url('imagens/background002.jpg') right center/cover no-repeat fixed;
+    box-shadow: inset 0px 17px 20px 1px #000000ad;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: var(--cor2);
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
