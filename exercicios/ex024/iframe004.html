@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+<body>
+    <h1>Meu site Principal</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis eius laborum, harum, quisquam corrupti officiis deleniti placeat quaerat enim ipsum nostrum quos, culpa fuga? Ut sapiente sequi reprehenderit molestiae soluta.</p>
+
+    <!-- 
+        sandbox="sandbox" cria uma proteção maior a sites que podem ser maliciosos 
+        sandbox="allow-same-origin"(permitir conteudo de mesma origem), se caso quiser que uma parte do site funcione
+        sandbox="sandbox allow-same-origin allow-scripts"
+
+        referrerpolicy="no-referrer" o que está dentro do iframe não vai permitir que acesse informações do seu usuário, e capture dados
+    -->
+    <iframe src="paginas-extras/pag004.html" frameborder="1" sandbox="allow-forms allow-scripts allow-same-origin" referrerpolicy="no-referrer"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde consequatur libero ipsa. Voluptas, praesentium eveniet. Commodi repudiandae culpa saepe possimus exercitationem. Aliquid, eaque quos pariatur maiores minima id soluta nulla.</p>
+</body>
+</html>
