@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="itens">
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+                <li><a href="">Opção 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae excepturi quibusdam corporis ipsa minima quia dolorem maiores consequuntur, ut illum harum nostrum facilis porro, soluta hic alias error aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo placeat vero, minima inventore nostrum beatae aspernatur? Repudiandae repellendus maxime porro rerum alias, harum obcaecati laborum asperiores dolore numquam repellat!</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae excepturi quibusdam corporis ipsa minima quia dolorem maiores consequuntur, ut illum harum nostrum facilis porro, soluta hic alias error aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo placeat vero, minima inventore nostrum beatae aspernatur? Repudiandae repellendus maxime porro rerum alias, harum obcaecati laborum asperiores dolore numquam repellat!</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae excepturi quibusdam corporis ipsa minima quia dolorem maiores consequuntur, ut illum harum nostrum facilis porro, soluta hic alias error aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo placeat vero, minima inventore nostrum beatae aspernatur? Repudiandae repellendus maxime porro rerum alias, harum obcaecati laborum asperiores dolore numquam repellat!</p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if(itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
