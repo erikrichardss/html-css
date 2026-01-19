@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/justicon/free-simple-line/256/Development-Interface-Computer-Photo-Gear-Browser-icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
+    <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width: 992px) and (max-width: 1200px)">
+    <script src="script/login.js" defer></script>
+</head>
+<body>
+    <header>
+        <section>
+            <nav id="menu">
+                <span class="material-symbols-outlined">menu</span>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                person_search
+                            </span>
+                            Pesquisar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                person_edit
+                            </span>
+                         </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main id="login">
+        <section id="sign-up">
+            <h1>Login</h1>
+
+            <p>Não é um membro? <a href="#">Cadastrar</a></p>
+        </section>
+        
+        <section>
+            <form action="" autocomplete="on" method="post">
+                <div id="formulario">
+                    <input type="email" name="email" id="iemail" placeholder="Email" autocomplete="email" required>
+                </div>
+                <div id="formulario">
+                    <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required min="8">
+                </div>
+                
+                <input type="button" value="Logar">
+                
+            </form>
+
+            <div>
+                <p>Logar com</p>
+
+                <div id="icones">
+                    <img src="https://cdn-icons-png.freepik.com/128/300/300221.png" alt="">
+                    <img src="https://cdn-icons-png.freepik.com/128/2190/2190355.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
