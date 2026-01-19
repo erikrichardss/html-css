@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 001</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>Meu Teste</h1>
+
+            <div class="container-header">
+                <form action="" autocomplete="off">
+                    <input type="search" name="pes" id="ipes" placeholder="Pesquisar" autocomplete="">
+                </form>
+
+                <div class="circ">
+
+                </div>
+            </div>
+            
+            <div id="menu">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+
+                <div class="lista">
+                    <div class="itens"></div>
+                    <div class="itens"></div>
+                    <div class="itens"></div>
+                    <div class="itens"></div>
+                    <div class="itens"></div>
+                    <div class="itens"></div>
+                    <div class="itens"></div>
+                    <div class="itens"></div>
+                    <div class="itens"></div>
+                    <div class="itens"></div>
+                    <div class="itens"></div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="img-paralax">
+
+        </section>
+        <section class="formulario">
+            <form action="" autocomplete="on" >
+                <fieldset >
+                    <div class="form">
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" required autocomplete="name">
+                    </div>
+                    <div class="form">
+                        <label for="iemail">E-mail</label>
+                        <input type="email" name="email" id="iemail" autocomplete="email" placeholder="@.com" required>
+                    </div>
+                    <div class="form">
+                        <label for="isen">Senha:</label>
+                        <input type="password" name="sen" id="isen" required min="8">
+                        <label for="irep">Repita sua senha:</label>
+                        <input type="password" name="rep" id="irep" required min="8">
+                    </div>
+                    <div class="form">
+                        <label for="iest">Estado</label>
+                        <select name="est" id="iest" required>
+                            <option value="" disabled selected>Selecione um Estado</option>
+                            <optgroup label="Norte">
+                                <option value="">Amazonas</option>
+                                <option value="">Para</option>
+                            </optgroup>
+                            <optgroup label="Nordeste">
+                                <option value="">Bahia</option>
+                                <option value="">Piaui</option>
+                            </optgroup>
+                            <optgroup label="Centro-Oeste">
+                                <option value="">Distrito Federal</option>
+                                <option value="">Mato Grosso do Norte</option>
+                            </optgroup>
+                            <optgroup label="Sudeste">
+                                <option value="">Minas Gerais</option>
+                                <option value="">Espírito Santo</option>
+                            </optgroup>
+                            <optgroup label="Sul">
+                                <option value="">Parana</option>
+                                <option value="">Santa Catarina</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <label for="itext">Fale sobre você</label>
+                        <textarea name="text" id="itext" maxlength="1000" cols="40" rows="10" style="resize: none;"></textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>

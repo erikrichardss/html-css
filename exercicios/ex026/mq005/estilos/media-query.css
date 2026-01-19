@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+/* Typical Device Breakpoints
+--------------------------------
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200 px
+*/
+
+@media print {
+    span#burger {
+        display: none;
+    }
+
+    main::after {
+        content: 'Site feito por Erik Richard';
+        text-decoration: overline;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    span#burger {
+        display: none;
+    }
+
+    nav {
+        display: block !important; /* Dessa maneira você afirma pro navegador que será visível */
+    }
+
+    nav > ul > li {
+        display: inline-block; /* Um ao lado do outro */
+    }
+
+    main {
+        width: 768px;
+    }
+}
