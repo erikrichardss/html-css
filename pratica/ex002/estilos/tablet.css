@@ -1,5 +1,26 @@
 @charset 'UTF-8';
 
-body {
+header {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+main {
     
+}
+
+nav#menu > span {
+    display: none;
+}
+
+nav#menu > ul {
+    display: block !important;
+    position: absolute;
+    background-color: #ffffff00;
+    height: 200px;
+    width: 100%;
+}
+
+nav#menu > ul > li {
+    display: flex;
 }
