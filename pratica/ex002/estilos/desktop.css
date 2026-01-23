@@ -4,10 +4,23 @@ body {
     background: url(https://i.pinimg.com/1200x/22/93/c8/2293c8ae9c94f221d748111412ecf1d3.jpg) center/cover no-repeat;
 }
 
+header {
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 nav#menu > span {
     display: none;
 }
 
 nav#menu > ul {
     display: block !important;
+    background-color: #ffffff00;
+    height: auto;
+    width: auto;
+}
+
+nav#menu > ul > li {
+    display: inline-block;
 }
