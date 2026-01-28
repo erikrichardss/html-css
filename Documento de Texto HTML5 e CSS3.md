@@ -2,7 +2,15 @@
 
 Sites
 
+QR Code
 <a href="https://www.qr-code-generator.com/">https://www.qr-code-generator.com/</a>
+
+Para treinar CSS
+https://codepen.io/
+
+https://cssbattle.dev/
+
+https://css-tricks.com/
 
 ## **HTML5**
 
