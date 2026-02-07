@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex-basis: 50px;
+}
+
+header > nav > a {
+    width: 90vw;
+}
+
+button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    align-self: self-end;
+    cursor: pointer;
+}
+
+span.material-symbols-outlined {
+    font-size: 2.4em;
+    
+    transition: transform .3s ease-in-out;
+}
+
+span.material-symbols-outlined:hover {
+    transform: rotate(90deg);
+}
+
+.lista {
+    display: none;
+}
+
+.lista-toggle {
+    display: flex;
+}
