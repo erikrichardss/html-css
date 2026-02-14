@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            font: 1.2em normal Arial, Helvetica, sans-serif;
+        }
+
+        .parent {
+            padding: 10px;
+            height: 100vh;
+            background-color: black;
+            display: grid;
+            grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+            grid-auto-rows: 100px;
+            grid-auto-columns: 100px;
+            gap: 10px;
+            place-content: auto;
+            place-items: auto;
+        }
+
+        .cabecalho {
+            background-color: #D20000;
+            grid-column: span 4;
+            border-radius: 10px;
+        }
+
+        .lateral {
+            background-color: #00E826;
+            grid-row: span 3;
+            border-radius: 10px;
+        }
+
+        .meio {
+            background-color: #2F9ED1;
+            grid-column: span 2;
+            grid-row: span 3;
+            border-radius: 10px;
+        }
+
+        .direita-cima {
+            background-color: #5D00D1;
+            border-radius: 10px;
+        }
+
+        .direita-baixo {
+            background-color: #D70093;
+            grid-row: span 2;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="cabecalho">Cabeçalho</div>
+        <div class="lateral">Lateral</div>
+        <div class="meio">Meio</div>
+        <div class="direita-cima">Direita-cima</div>
+        <div class="direita-baixo">Direita-baixo</div>
+    </div>
+</body>
+</html>
