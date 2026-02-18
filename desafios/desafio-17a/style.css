@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+div.parent {
+    display: grid;
+    grid-template: 150px 1fr 4fr 1fr / 1fr 2fr 1fr;
+    gap: 10px;
+
+    height: 100vh;
+}
+
+div.topo {
+    background-color: burlywood;
+
+    grid-area: 1 / 1 / 1 / 4;
+}
+
+div.menu {
+    background-color: cadetblue;
+
+    grid-area: 2 / 1 / 2 / span 3;
+}
+
+div.principal {
+    background-color: yellow;
+
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+div.secundario {
+    background-color: chartreuse;
+
+    grid-area: 3 / 3 / span 1 / span 1;
+}
+
+div.rodape {
+    background-color: hotpink;
+
+    grid-area: 4 / 1 / span 1 / span 3;
+}
